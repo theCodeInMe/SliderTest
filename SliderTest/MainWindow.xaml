@@ -1,0 +1,65 @@
+﻿<Window x:Class="SliderTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SliderTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel x:Name="backPanel">
+        
+        
+        <ScrollBar 
+            x:Name="greenSlide"
+            Value="0"
+            Orientation="Horizontal"
+            Minimum="0"
+            Maximum="255"
+            SmallChange="5"
+            LargeChange="10"
+            ValueChanged="changeBackColor"
+            />
+        
+        <Slider
+            x:Name="blueSlide"
+            Value="0"
+            Minimum="0"
+            Maximum="255"
+            SmallChange="5"
+            LargeChange="10"
+            TickFrequency="5"
+            IsSnapToTickEnabled="True"
+            TickPlacement="BottomRight"
+            AutoToolTipPlacement="TopLeft"
+            ValueChanged="changeBackColor"
+            />
+        
+        <Slider
+            x:Name="redSlide"
+             Value="255"
+             Minimum="0"
+             Maximum="255"
+             SmallChange="5"
+             LargeChange="10"
+             TickFrequency="5"
+             IsSnapToTickEnabled="True"
+             TickPlacement="BottomRight"
+             AutoToolTipPlacement="TopLeft"
+             ValueChanged="changeBackColor"
+             />
+        
+        <Slider
+             x:Name="alphaSlide"
+             Value="255"
+             Minimum="0"
+             Maximum="255"
+             SmallChange="5"
+             LargeChange="10"
+             TickFrequency="5"
+             IsSnapToTickEnabled="True"
+             TickPlacement="BottomRight"
+             AutoToolTipPlacement="TopLeft"
+             ValueChanged="changeBackColor"/>
+
+    </StackPanel>
+</Window>
